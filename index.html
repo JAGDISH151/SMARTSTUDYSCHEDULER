@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART STUDY SCHEDULER</title>
+    <style>
+    #contain1{
+        background-color: rgb(63, 60, 60);
+        
+    }    
+    
+    .box{
+        
+        display: inline-block;
+        margin: 20px
+    }
+
+    #box5{
+        position:absolute;
+        right: 90px;
+    }
+    #box6{
+        position:absolute;
+        right: 100px;
+        top: 500px;
+        border: 5px solid rgb(63, 60, 60);
+    }
+    #box7{
+        position:absolute;
+        right: 250px;
+        top: 500px;
+        border: 5px solid rgb(63, 60, 60);
+    }
+    #box8{
+        position:absolute;
+        right: 100px;
+        top: 350px;
+        border: 5px solid rgb(63, 60, 60);
+    }
+    #box9{
+        position:absolute;
+        right: 250px;
+        top: 350px;
+        border: 5px solid rgb(63, 60, 60);
+    }
+    #box10{
+        position:absolute;
+        right: 100px;
+        top: 200px;
+        border: 5px solid rgb(63, 60, 60);
+    }
+    #box11{
+        position:absolute;
+        right: 250px;
+        top: 200px;
+        border: 5px solid rgb(63, 60, 60);
+    }
+    #box45{
+        position:absolute;
+        right: 250px;
+        top: 650px;
+        border: 5px solid rgb(63, 60, 60);}
+    #box61{
+        position:absolute;
+        right: 100px;
+        top: 650px;
+        border: 5px solid rgb(63, 60, 60);}
+        #t1{
+            position: absolute;
+            right: 450px;
+            top: 31px;
+            color:white;   
+        }
+        #t2{
+            position: absolute;
+            right: 725px;
+            top: 130px;
+            
+        }
+        #t3{
+            position: absolute;
+            left: 238px;
+            top: 313px;
+            
+        }
+        #t4{
+            position: absolute;
+            left: 943px;
+            top: 605px;
+            
+        }
+
+    #ta1{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 825px;
+        top: 185px;
+    }
+    #ta2{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 545px;
+        top: 185px;
+    }
+    #ta3{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 825px;
+        top: 260px;
+    }
+    #ta4{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 545px;
+        top: 260px;
+    }
+    #ta5{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 825px;
+        top: 334px;
+    }
+    #ta6{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 545px;
+        top: 334px;
+    }
+    #ta7{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 825px;
+        top: 408px;
+    }
+    #ta8{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 545px;
+        top: 408px;
+    }
+    #ta9{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 825px;
+        top: 482px;
+    }
+    #ta10{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        right: 545px;
+        top: 482px;
+    }
+
+    #ta11{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 135px;
+        top: 435px;
+    }
+    #ta12{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 438px;
+        top: 435px;
+    }
+    #ta13{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 135px;
+        top: 550px;
+    }
+    #ta14{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 438px;
+        top: 550px;
+    }
+    #ta15{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 135px;
+        top: 665px;
+    }
+    #ta16{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 438px;
+        top: 665px;
+    }
+    #ta17{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 135px;
+        top: 778px;
+    }
+    #ta18{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 438px;
+        top: 778px;
+    }
+    #ta19{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 135px;
+        top: 890px;
+    }
+    #ta20{
+        resize: none;
+        background-color: rgb(63, 60, 60);
+        position: absolute;
+        left: 438px;
+        top: 890px;
+    }
+
+    #box12{
+        position: absolute;
+        left:100px;
+        bottom: 5px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box13{
+        position: absolute;
+        left:405px;
+        bottom: 5px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box14{
+        position: absolute;
+        left:100px;
+        bottom: 118px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box15{
+        position: absolute;
+        left:405px;
+        bottom: 118px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box16{
+        position: absolute;
+        left:100px;
+        bottom: 232px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box17{
+        position: absolute;
+        left:405px;
+        bottom: 232px;
+        width: 300px;
+        height: 110px;
+        color: black;
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box18{
+        position: absolute;
+        left:100px;
+        bottom: 346px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box19{
+        position: absolute;
+        left:405px;
+        bottom: 346px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box20{
+        position: absolute;
+        left:100px;
+        bottom: 460px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    #box21{
+        position: absolute;
+        left:405px;
+        bottom: 460px;
+        width: 300px;
+        height: 110px;
+        color: rgb(222, 62, 62);
+        border: 2px solid rgb(63, 60, 60);
+    }
+    
+    
+    .calculator {
+        max-width: 530px;
+        background-color:black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px auto;
+        
+        }
+        
+        
+        input[type=text] {
+        width: 315px;
+            height: 25px;
+            border-radius: 5px;
+            border: 0px;
+            background-color: black;
+            color: #d9d9d9;
+            padding: 0 5px 0 5px;
+            margin: 0 0px 10px 84px;
+            border: 1px solid white;
+        
+        }
+        
+        .calc-buttons {
+            display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        }
+        
+        .button {
+           margin: 3px;
+        width: 63px;
+        border: none;
+        height: 25px;
+        border-radius: 4px;
+        color: #000000;
+        cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: black;
+          transition: .2s;
+        }
+        
+        .functions-one {
+            width: 210px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            color: white;
+        }
+        
+        
+        .functions-two {
+        width: 280px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .triggers {
+            background-color: rgb(63, 60, 60);
+            color: white;
+        }
+        
+        .numbers {
+            background-color: rgb(63, 60, 60);
+            color: white;
+        }
+        
+        .basic-stuff {
+            background-color: rgb(63, 60, 60);
+            color: white;
+        }
+        
+        .complex-stuff {
+            background-color: rgb(63, 60, 60);
+            color: white;
+        }
+
+        #cal12{
+            position:absolute;
+            right:555px;
+            bottom: 50px;
+        }
+
+        #tsss12{
+            position: absolute;
+            left: 100px;
+            top: 90px;
+            width: 400px;
+        }
+
+        #start2{
+            background-color: black;
+        }
+        #stop2{
+            background-color: black;
+        }
+        #reset2{
+            background-color: black;
+        }
+        #start1{
+            background-color: black;
+        }
+        #stop1{
+            background-color: black;
+        }
+        #reset1{
+            background-color: black;
+        }
+        #start3{
+            background-color: black;
+        }
+        #stop3{
+            background-color: black;
+        }
+        #reset3{
+            background-color: black;
+        }
+        #start4{
+            background-color: black;
+        }
+        #stop4{
+            background-color: black;
+        }
+        #reset4{
+            background-color: black;
+        }
+        #start5{
+            background-color: black;
+        }
+        #stop5{
+            background-color: black;
+        }
+        #reset5{
+            background-color: black;
+        }
+        #start6{
+            background-color: black;
+        }
+        #stop6{
+            background-color: black;
+        }
+        #reset6{
+            background-color: black;
+        }
+        #start7{
+            background-color: black;
+        }
+        #stop7{
+            background-color: black;
+        }
+        #reset7{
+            background-color: black;
+        }
+        #start8{
+            background-color: black;
+        }
+        #stop8{
+            background-color: black;
+        }
+        #reset8{
+            background-color: black;
+        }
+        #start9{
+            background-color: black;
+        }
+        #stop9{
+            background-color: black;
+        }
+        #reset9{
+            background-color: black;
+        }
+        #start10{
+            background-color: black;
+        }
+        #stop10{
+            background-color: black;
+        }
+        #reset10{
+            background-color: black;
+        }
+        
+        #time1{
+            font-family: Bahnschrift ;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time2{
+            font-family: Bahnschrift;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time3{
+            font-family: Bahnschrift ;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time4{
+            font-family: Bahnschrift;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time5{
+            font-family: Bahnschrift ;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time6{
+            font-family: Bahnschrift;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time7{
+            font-family: Bahnschrift ;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time8{
+            font-family: Bahnschrift;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time9{
+            font-family: Bahnschrift ;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #time10{
+            font-family: Bahnschrift;
+            font-size: 25px;
+            color: #d9d9d9;
+        }
+        #contain11{
+            position: absolute;
+            top:367px;
+            left: 148px;
+        }
+        #contain12{
+            position: absolute;
+            top:367px;
+            left: 453px;
+        }
+        #contain13{
+            position: absolute;
+            top:482px;
+            left: 148px;
+        }
+        #contain14{
+            position: absolute;
+            top:482px;
+            left: 453px;
+        }
+        #contain15{
+            position: absolute;
+            top:597px;
+            left: 148px;
+        }
+        #contain16{
+            position: absolute;
+            top:597px;
+            left: 453px;
+        }
+        #contain17{
+            position: absolute;
+            top:712px;
+            left: 148px;
+        }
+        #contain18{
+            position: absolute;
+            top:712px;
+            left: 453px;
+        }
+        #contain19{
+            position: absolute;
+            top:827px;
+            left: 148px;
+        }
+        #contain110{
+            position: absolute;
+            top:827px;
+            left: 453px;
+        }
+        
+        #buttons121{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:40px;
+        }
+        #buttons122{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons123{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons124{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons125{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons126{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons127{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons128{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons129{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        #buttons1210{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left:41px;
+        }
+        
+        /* Dropdown Button */
+.dropbtn {
+    background-color: rgb(63, 60, 60);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(63, 60, 60);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(63, 60, 60);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: rgb(63, 60, 60);}
+    
+    </style>
+    
+    
+</head>
+
+<body style="background-color: #000000;">
+    
+    <div class="container" id="contain1">
+        <div class="box" id="box1"><a style="text-decoration: none;" target="_blank" href="/pomodoro r=1.html"  ><font color="white" size="4" face="Bahnschrift SemiBold">POMODORO</font></a></div>
+        <div class="box" id="box5"><form action=""><input type="text" placeholder="Enter Name" style="font-family: Bahnschrift;"></form></div>
+        <div class="dropdown" id="drp">
+            <button class="dropbtn"><font color="white" size="4" face="Bahnschrift SemiBold">TIMETABLE FOR SCHOOL GOING STUDENTS</font></button>
+            <div class="dropdown-content">
+                <a href="/timetable3.html" style="text-decoration: none;" target="_blank"><font color="white" size="4" face="Bahnschrift SemiBold">NORMAL</font></a>
+                <a href="/timetable2.html" style="text-decoration: none;" target="_blank"><font color="white" size="4" face="Bahnschrift SemiBold">EARLY RISERS</font></a>
+                <a href="/timetable1.html" style="text-decoration: none;" target="_blank"><font color="white" size="4" face="Bahnschrift SemiBold">NIGHT OWLS</font></a>
+            </div>
+        </div>
+        <div class="dropdown" id="drp1">
+            <button class="dropbtn"><font color="white" size="4" face="Bahnschrift SemiBold">TIMETABLE FOR SCHOOL NOT GOING STUDENTS</font></button>
+            <div class="dropdown-content">
+                <a href="/timetable6.html" style="text-decoration: none;" target="_blank"><font color="white" size="4" face="Bahnschrift SemiBold">NORMAL</font></a>
+                <a href="/timetable5.html" style="text-decoration: none;" target="_blank"><font color="white" size="4" face="Bahnschrift SemiBold">EARLY RISERS</font></a>
+                <a href="/timetable4.html" style="text-decoration: none;" target="_blank"><font color="white" size="4" face="Bahnschrift SemiBold">NIGHT OWLS</font></a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="container" id="contain2">
+        <div class="box" id="box6"><a href="https://byjus.com/"  target="_blank"><img src="/bjyua.png" height="100" width="100"></a></div>
+        <div class="box" id="box7"><a href="https://www.vedantu.com/"  target="_blank"><img src="/vedantu.png" height="100" width="100"></a></div>
+        <div class="box" id="box8"><a href="https://www.toppr.com/"  target="_blank"><img src="/toppr.png" height="100" width="100"></a></div>
+        <div class="box" id="box9"><a href="https://brainly.in/"  target="_blank"><img src="/brainly.png" height="100" width="100"></a></div>
+        <div class="box" id="box10"><a href="https://www.google.com/"  target="_blank"><img src="/gulgul.png" height="100" width="100"></a></div>
+        <div class="box" id="box11"><a href="https://www.youtube.com/"  target="_blank"><img src="/yt.png" height="100" width="100"></a></div>
+        <div class="box" id="box45"><a href="https://www.pw.live/"  target="_blank"><img src="/pw.jpg" height="100" width="100"></a></div>
+        <div class="box" id="box61"><a href="https://unacademy.com/"  target="_blank"><img src="/un.png" height="100" width="100"></a></div>
+    </div>
+
+    <div class="container" id="contain3">
+        <textarea name="" id="ta1" cols="35" rows="3.25">1.</textarea>
+        <textarea name="" id="ta2" cols="35" rows="3.25">2.</textarea>
+        <textarea name="" id="ta3" cols="35" rows="3.25">3.</textarea>
+        <textarea name="" id="ta4" cols="35" rows="3.25">4.</textarea>
+        <textarea name="" id="ta5" cols="35" rows="3.25">5.</textarea>
+        <textarea name="" id="ta6" cols="35" rows="3.25">6.</textarea>
+        <textarea name="" id="ta7" cols="35" rows="3.25">7.</textarea>
+        <textarea name="" id="ta8" cols="35" rows="3.25">8.</textarea>
+        <textarea name="" id="ta9" cols="35" rows="3.25">9.</textarea>
+        <textarea name="" id="ta10" cols="35" rows="3.25">10.</textarea>
+
+    </div>
+
+    <div class="container" id="contain23">
+        <textarea name="" id="ta11" cols="35" rows="2.7">Computer Science</textarea>
+        <textarea name="" id="ta12" cols="35" rows="2.7">Maths</textarea>
+        <textarea name="" id="ta13" cols="35" rows="2.7">Physics</textarea>
+        <textarea name="" id="ta14" cols="35" rows="2.7">Chemistry</textarea>
+        <textarea name="" id="ta15" cols="35" rows="2.7">Biology</textarea>
+        <textarea name="" id="ta16" cols="35" rows="2.7">English</textarea>
+        <textarea name="" id="ta17" cols="35" rows="2.7"></textarea>
+        <textarea name="" id="ta18" cols="35" rows="2.7"></textarea>
+        <textarea name="" id="ta19" cols="35" rows="2.7"></textarea>
+        <textarea name="" id="ta20" cols="35" rows="2.7"></textarea>
+
+    </div>
+
+    <div class="container" id="contain4">
+        <div class="box" id="box12"></div>
+        <div class="box" id="box13"></div>
+        <div class="box" id="box14"></div>
+        <div class="box" id="box15"></div>
+        <div class="box" id="box16"></div>
+        <div class="box" id="box17"></div>
+        <div class="box" id="box18"></div>
+        <div class="box" id="box19"></div>
+        <div class="box" id="box20"></div>
+        <div class="box" id="box21"></div>
+
+    </div>
+
+    
+    
+    <div class="text" id="t1"><font color="white" size="3.7" face="Bahnschrift SemiBold">Name:</font></div>
+    <div class="text" id="t2"><font color="white" size="6" face="Bahnschrift SemiBold">TO DO LIST:</font></div>
+    <div class="text" id="t3"><font color="white" size="6" face="Bahnschrift SemiBold">SUBJECT WISE TIMERS:</font></div>
+    <div class="text" id="t4"><font color="white" size="6" face="Bahnschrift SemiBold">CALCULATOR</font></div>
+
+    <div id="tsss12"><img src="BACK4.PNG" alt=""></div>
+
+
+
+    <div class="calculator" id="cal12">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+            <div class="functions-one">
+                <button class="button triggers">C</button>
+                <button class="button basic-stuff">(</button>
+                <button class="button basic-stuff">)</button>
+                <button class="button numbers">7</button>
+                <button class="button numbers">8</button>
+                <button class="button numbers">9</button>
+                <button class="button numbers">4</button>
+                <button class="button numbers">5</button>
+                <button class="button numbers">6</button>
+                <button class="button numbers">1</button>
+                <button class="button numbers">2</button>
+                <button class="button numbers">3</button>
+                <button class="button basic-stuff">±</button>
+                <button class="button numbers">0</button>
+                <button class="button basic-stuff">.</button>
+            </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container" id="contain11"> 
+        <div id="time1"> 
+            <span class="digit" id="hr1"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min1"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec1"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count1"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons121"> 
+            <button class="btn" id="start1"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop1"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset1"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div> 
+
+    <div class="container" id="contain12"> 
+        <div id="time2"> 
+            <span class="digit" id="hr2"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min2"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec2"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count2"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons122"> 
+            <button class="btn" id="start2"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop2"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset2"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div> 
+
+    <div class="container" id="contain13"> 
+        <div id="time4"> 
+            <span class="digit" id="hr3"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min3"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec3"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count3"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons123"> 
+            <button class="btn" id="start3"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop3"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset3"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain14"> 
+        <div id="time4"> 
+            <span class="digit" id="hr4"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min4"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec4"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count4"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons124"> 
+            <button class="btn" id="start4"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop4"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset4"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain15"> 
+        <div id="time5"> 
+            <span class="digit" id="hr5"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min5"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec5"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count5"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons125"> 
+            <button class="btn" id="start5"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop5"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset5"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain16"> 
+        <div id="time6"> 
+            <span class="digit" id="hr6"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min6"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec6"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count6"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons126"> 
+            <button class="btn" id="start6"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop6"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset6"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain17"> 
+        <div id="time7"> 
+            <span class="digit" id="hr7"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min7"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec7"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count7"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons127"> 
+            <button class="btn" id="start7"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop7"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset7"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain18"> 
+        <div id="time8"> 
+            <span class="digit" id="hr8"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min8"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec8"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count8"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons128"> 
+            <button class="btn" id="start8"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop8"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset8"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain19"> 
+        <div id="time2"> 
+            <span class="digit" id="hr9"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min9"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec9"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count9"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons129"> 
+            <button class="btn" id="start9"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop9"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset9"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+    <div class="container" id="contain110"> 
+        <div id="time10"> 
+            <span class="digit" id="hr10"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Hr</font></span> 
+            <span class="digit" id="min10"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Min</font></span> 
+            <span class="digit" id="sec10"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+            <span class="txt"><font color="white" size="5" face="Bahnschrift SemiBold">Sec</font></span> 
+            <span class="digit" id="count10"> 
+                <font color="white" size="5" face="Bahnschrift SemiBold">00</font></span> 
+        </div> 
+        <div id="buttons1210"> 
+            <button class="btn" id="start10"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Start</font></button> 
+            <button class="btn" id="stop10"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Stop</font></button> 
+            <button class="btn" id="reset10"> 
+                <font color="white" size="4" face="Bahnschrift SemiBold">Reset</font></button> 
+        </div> 
+    </div>
+
+    
+    <script  src="./script.js"></script>
+
+</body>
+</html>
